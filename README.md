@@ -28,3 +28,15 @@ $ make
 （4）在 DNW 窗口中输入“dnw 0xd0020010” 设置下载地址。如果 DNW 驱动安装失败或首次使用 DNW，会提示安装驱动，请正确安装驱动，等到提示硬件可使用从进行下一步;  
 （5）在 DNW 菜单中，选择 usbport->Transmit->Transmit 发送生成的 uart.bin 文件， DNW自动下载 uart.bin 文件至开发板;  
 （6）在 DNW 窗口中输入“go 0xd0020010”，即可开始运行 key.bin 程序。注意，将二进制文件下载到 SRAM 中不会破坏开发板中现有文件与程序，但是掉电后所下载的文件将丢失。  
+# 预期结果
+![image](https://user-images.githubusercontent.com/66285048/191899295-9d3a6b6c-a0cb-4594-becd-5027542623ed.png)  
+基本实现以下两个功能：  
+（1）由PC端的输入字母“play”，实现在PC端显示“Playing music fsj”，音乐时长超过10秒。  
+（2）由开发板按下SW4键，实现PC端显示 “Marquee”，同时，4颗流水灯自左向右一次，每颗LED亮灭时间各2s（要求精准2秒），最后全亮。  
+![image](https://user-images.githubusercontent.com/66285048/191899338-12ff0e37-9b97-4c2c-a9ea-67c3de49a173.png)  
+![image](https://user-images.githubusercontent.com/66285048/191899403-dabadc4d-c0bb-4d1d-88ca-8188e7b5c1ff.png)  
+![image](https://user-images.githubusercontent.com/66285048/191899419-17ddcdc8-d7a2-498a-b882-db2c66e7a765.png)  
+
+
+
+
